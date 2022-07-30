@@ -1,0 +1,65 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CCNE</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <form action="" class="search-bar">
+            <input id="codeInput" type="text" placeholder="FIND_ASSET_ID" name="Hello">
+            <button onclick="getDataReq()" type="submit">Search</button>
+        </form>
+        <div class="tableNew">
+            <table>
+                <tr>
+                  <th>Serial_Number</th>
+                  <th>Asset_Id</th>
+                  <th>Status</th>
+                </tr>
+                <tr>
+                  <td id="Search"></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+              </table>
+        </div>
+    </div>
+    
+</body>
+</html>
+
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container" id="mainWrap">
+      <input
+        class="inputBox"
+        id="codeInput"
+        type="text"
+        placeholder="Enter code"
+      />
+      <button type="submit" onclick="getDataFunc()">Search</button>
+      <div id="targetedDiv">
+        <!-- <ol>
+          <li id="serial" class="liRes"></li>
+          <li id="asset" class="liRes"></li>
+        </ol> -->
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.min.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
